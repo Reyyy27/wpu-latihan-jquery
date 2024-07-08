@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - Latihan 3</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 10%
+		}
+	</style>
+</head>
+<body>
+	
+	<div id="app">
+		<h1>Halo <span id="text">Rey!</span></h1>
+		<p>The Write Less, Do More, JavaScript Library.</p>
+		<button id="syg">Ubah Tulisan</button>
+
+       <form action="">
+            <input type="text">
+            
+       </form>
+
+		<section class="main">
+			<nav>
+				<ul>
+					<li><a href="">Download</a></li>
+					<li><a href="">Blog</a></li>
+					<li><a href="">API Documentation</a></li>
+					<li><a href="">Plugin</a></li>
+				</ul>
+			</nav>
+
+			<div class="column">
+				<h3 class="title">Lightweight Footprint</h3>
+				<p>Only 30kB minified and gzipped. Can also be included as an AMD module</p>
+			</div>
+
+			<div class="column">
+				<h3 class="title">CSS3 Compliant</h3>
+				<p>Supports CSS3 selectors to find elements as well as in style property manipulation</p>
+			</div>
+
+			<div class="column">
+				<h3 class="title">Cross-Browser</h3>
+				<p>Chrome, Edge, Firefox, IE, Safari, Android, iOS, and more</p>
+			</div>
+		</section>
+
+		<div class="footer">
+			<p>&copy; rey - 2024</p>
+		</div>
+	</div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('input').keyup(function(){
+            var nama = $(this).val()
+            $('#text').text(nama)
+        })
+    })
+</script>
+</body>
+</html>
